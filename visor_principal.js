@@ -259,6 +259,12 @@ function setupEventListeners(map, pieChart) {
   });
 }
 
+function removePreloader() {
+  var preloader = document.querySelector("#preloader-container");
+  preloader.style.opacity = 0;
+  setTimeout(function() { preloader.remove() }, 250);
+}
+
 // Función de puesta a punto
 function setupApp() {
   // Visualizacion del mapa
@@ -316,6 +322,7 @@ function setupApp() {
   controlLayer.addTo(map);
   setupEventListeners(map, pieChart);
   map.addControl(new L.Control.Fullscreen());
+  removePreloader();
 }
 
 // Iniciar
