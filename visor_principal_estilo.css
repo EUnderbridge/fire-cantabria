@@ -1,0 +1,60 @@
+* {
+  font-family: sans-serif;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.piechart-control {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  left: -310px;
+  z-index: 10000;
+}
+
+.piechart-container {
+  background-color: rgba(255,255,255, .8);
+  padding: 10px;
+}
+
+.piechart-control.visible {
+  left: 0;
+}
+
+.piechart-control .piechart-handle {
+  width: 30px;
+  height: 60px;
+  opacity: 0.8;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-year {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-area {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.title-space {
+  font-size: 14px;
+  text-align: center;
+}
