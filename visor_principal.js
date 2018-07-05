@@ -139,9 +139,9 @@ function setupMapboxLayer() {
   var mapbox = L.tileLayer(mapboxUrl, {
     id: 'mapbox.streets',
     attribution: [
-      'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+      'Imagery © <a href="https://mapbox.com">Mapbox</a>',
     ].join(', '),
   });
   return mapbox;
